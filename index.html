@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b332bff08d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#About">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Data Science Student</p>
+                    <h1>Hi, I am <span>Arnav</span><br> Srivastava from <br> India</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -------------about----------- -->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/Me.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Enthusiastic and optimistic professional with a pursuing a Master’s in Data Science. Proficient in Python, with 
+                            strong problem-solving skills and the ability to develop effective solutions. Passionate about applying technical 
+                            expertise to derive insights, drive data-driven decisions, and contribute to innovative projects. Adaptable and 
+                            results-oriented, with a proven track record of excelling in challenging environments and achieving meaningful 
+                            outcomes. Committed to continuous learning and expanding knowledge in data science, machine learning, 
+                            data visualization, programming, and systems analysis. Eager to apply and enhance skills to create value in 
+                            dynamic and collaborative settings.</p>
+                    
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('github')">Github</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Python</span></li>
+                                    <li><span>C++</span></li>
+                                    <li><span>SQL</span></li>
+                                    <li><span>Data visualization</span></li>
+                                    <li><span>Jupyter Notebook</span></li>
+                                    <li><span>Object Oriented Programming</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>June 2023 - Spet 2023</span><br>Application Development Intern at Primewayz Infotech Pvt. Ltd.</li>
+                                    <li><span>March 2023 - August 2023</span><br>Data Analysis Consulting Virtual Intern at KPMG.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>August 2024 - Current</span><br>Master’s of Science in Data Science at Indiana University Bloomington, USA.</li>
+                                    <li><span>Sptember 2020 - June 2024</span><br>Bachelor's of Technology in Computer Science and Engineering at SRM University, Chennai, India.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="github">
+                                <ul>
+                                    <a href="https://github.com/mearnav">mearnav</a>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!--------------------------------------------portfolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/steam.png">
+                <div class="layer">
+                    <h3>Game Recommendation System on Steam</h3>
+                    <p>This project presents a game recommendation system for Steam, enhancing user engagement with personalized suggestions.</p>
+                    <a href="https://github.com/mearnav/Data_Mining_Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/music.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>A music app offering personalized playlists, seamless streaming, and discovery of new songs and artists.</p>
+                    <a href="https://github.com/mearnav/Music-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/posture.png">
+                <div class="layer">
+                    <h3>Smart System for Workplace Posture Monitoring</h3>
+                    <p>Develop an intelligent system to monitor and analyze workplace posture in real-time using deep learning techniques.</p>
+                    <a href="https://github.com/mearnav/Major-Project-2024"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/ai.png">
+                <div class="layer">
+                    <h3>Health-care Chatbot</h3>
+                    <p>Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.</p>
+                    <a href="https://github.com/mearnav/Artificial-Intelligence-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!---------------------------------------contact----------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> arnav.1508.srivastava@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1(302)-339-3884</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/arnavsrivastava15"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://linkedin.com/in/mearnav"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images/ARNAV SRIVASTAVA_RESUME.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
